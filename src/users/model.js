@@ -22,8 +22,8 @@ const User = sequelize.define(
       allowNull: false,
     },
   },
-  { timestamps: false, indexed: [{ unique: true, fields: ["username"] }] }
+  { timestamps: false, indexes: [{ unique: true, fields: ["username"] }] }
 );
 
 
-module.exports = User
+module.exports = User;
